@@ -22,14 +22,6 @@ public class Blackjack {
         
         
        
-        
-
-        //Task 3 – Wait for the user to press enter.
-        //Task 4 – Get two random cards.
-        //       – Print them: \n You get a \n" + <randomCard> + "\n and a \n" + <randomCard>
-
-        //Task 5 – Print the sum of your hand value.
-        //       – print: your total is: <hand value>
 
             int dealerCard1 = drawRandomCard();
             int dealerCard2 = drawRandomCard();
@@ -39,11 +31,6 @@ public class Blackjack {
        
             
             
-        
-        //Task 6 – Get two random cards for the dealer.
-        //       – Print: The dealer shows \n" + <first card> + "\nand has a card facing down \n" + <facedown card>
-        //       – Print: \nThe dealer's total is hidden
-
             
             
             while (true){
@@ -62,15 +49,6 @@ public class Blackjack {
                     System.exit(0);
             }
        
-
-        //Task 8 – Keep asking the player to hit or stay (while loop).
-        //       1. Every time the player hits
-        //             – draw a new card.
-        //             – calculate their new total.
-        //             – print: (new line) You get a (new line) <show new card>.
-        //             - print: your new total is <total>
-
-        //       2. Once the player stays, break the loop. 
 
 
         
@@ -100,7 +78,6 @@ public class Blackjack {
                 System.out.println("Dealer Wins!");
             }
         
-        //For tasks 9 to 13, see the article: Blackjack Part II. 
          scan.close();
 
     }
@@ -111,14 +88,7 @@ public class Blackjack {
             return (int)randomNumber;
 
         }
-    /** Task 1 – make a function that returns a random number between 1 and 13
-     * Function name – drawRandomCard
-     * @return (int)
-     *
-     * Inside the function:
-     *   1. Gets a random number between 1 and 13.
-     *   2. Returns a card.
-     */
+    
 
       public static String cardString(int cardNumber){
         switch(cardNumber){
@@ -240,14 +210,7 @@ public class Blackjack {
            
 
       }
-    /** Task 2 – make a function that returns a String drawing of the card.
-     * Function name – cardString
-     * @param cardNumber (int)
-     * @return (String)
-     *
-     * Inside the function:
-     *   1. Returns a String drawing of the card.
-     */
+    
 
     public static String faceDown() {
         return
@@ -263,7 +226,7 @@ public class Blackjack {
       
         System.out.println("Would you like to hit or stay.");
         String option = scan.nextLine();
-        while (!(option.equalsIgnoreCase("hit") || option.equalsIgnoreCase("stay"))){  // equalsIgnoreCase accepts capital letter eg. HIT or STAY
+        while (!(option.equalsIgnoreCase("hit") || option.equalsIgnoreCase("stay"))){  
             System.out.println("Please write 'hit' or 'stay'");
             option = scan.nextLine();
             
@@ -272,15 +235,6 @@ public class Blackjack {
 
     }
     
-    /** Task 7 – make a function that asks the user to hit or stay.
-     * Function name – hitOrStay
-     * @return (String)
-     *
-     * Inside the function:
-     *   1. Asks the user to hit or stay.
-     *   2. If the user doesn't enter "hit" or "stay", keep asking them to try again by printing:
-     *      Please write 'hit' or 'stay'
-     *   3. Returns the user's option 
-     */
+   
     }
 
